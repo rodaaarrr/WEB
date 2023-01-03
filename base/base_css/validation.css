@@ -1,0 +1,76 @@
+.validation {
+    position: relative;
+    padding: 0 0 40px;
+    margin-bottom: 100px;
+}
+.container {
+}
+.validation__form {
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+    background-color: #e5ecf1;
+}
+.validation__form:after {
+    content: '';
+    position: absolute;
+    left: 158px;
+    bottom: 0;
+    z-index: -1;
+    width: 56px;
+    height: 40px;
+    background: url(../base_img/icons/after\ flag.svg) no-repeat;
+    background-size: contain;
+}
+.validation__title {
+    flex-shrink: 0;
+    margin: 12px 20px 0 0;
+}
+.validation__form form{
+    max-width: 465px;
+    width: 100%;
+}
+
+.validation__input-box {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 1px 3px rgb(0 75 124 / 15%);
+    align-items:center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.validation__form input[name=text], .validation__text {
+    max-width: 302px;
+    width: 100%;
+    padding: 15px 19px;
+    font-weight: 400;
+    color: #242e35;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+.validation__btn {
+}
+
+.validation__btn input[type="submit"], .validation__btn {
+	flex-shrink: 0;
+    min-width: 185px;
+    height: 55px;
+    padding:0 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #fff;
+    background-color: #f86630 !important;
+    border: none;
+    outline: 0;
+    border-radius: 3px !important;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+  
+.validation__btn input[type="submit"]:hover {
+    background-color: #6078f1;
+	transition: background-color 0.3s ease-in-out;
+  }

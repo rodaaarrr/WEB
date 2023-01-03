@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin furniture</title>
+    <link rel="stylesheet" href="./base_css/base_style.css">
+    <link rel="stylesheet" href="./base_css/reset.css">
+    <link rel="stylesheet" href="./base_css/simplebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./base_css/modal.css">
+    <link rel="stylesheet" href="./base_css/validation.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./base_css/testimonials.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="container">
+            <nav class="header__nav nav">
+                <div class="nav__logo">
+                        <h2 class="logo"><a href="#home">Martin furniture</a></h2>
+                    </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Каталог</a></li>
+					<li class="nav__item"><a href="#validation" class="nav__link">Акции</a></li>
+					<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+				</ul>
+				<div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						Корзина
+						<span class="cart__quantity">0</span>
+					</div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                            <!--<li class="cart-content__item">
+                                <article class="cart-content__product cart-product">
+                                    <img src="img/стул.webp" alt="Стул" class="cart-product__img">
+                                    <div class="cart-product__text">
+                                        <h3 class="cart-product__title">Стол кухонный 90х76 см Атмосфера Оптима лдсп цвет дуб сонома</h3>
+                                        <span class="cart-product__price">2 700 ₽</span>
+                                    </div>
+                                    
+                                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                                </article>
+                            </li> -->
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span>Итого</span>
+                                <span class="fullprice">76545678</span>
+                            </div>
+                            <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="300">Перейти в корзину</button>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </header>   
+    <section class="swiper">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./base_img/01.jpg"></div>
+                  <div class="swiper-slide"><img src="./base_img/02.jpg"></div>
+                  <div class="swiper-slide"><img src="./base_img/03.jpg"></div>
+                  <div class="swiper-slide"><img src="./base_img/04.jpg"></div>
+                  <div class="swiper-slide"><img src="./base_img/05.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+        </div>   
+    </section>
+    <section class="inform">
+        <div class="container">
+            <h2 class="iform__title title">Популярные разделы</h2>
+            <div class="inform__furniture">
+                
+                <div class="inform__Block">
+                    <img src="./base_img/icons/диван.png" alt="">
+                    <h5 class="inform__text"> <a href="#!">Диваны</a></h5>
+                    
+                </div>
+            
+                <div class="inform__Block">
+                    <img src="./base_img/icons/комод.png" alt="">
+                    <h5 class="inform__text"><a href="#!">Комоды</a></h5>
+                    
+                </div>
+    
+                <div class="inform__Block">
+                    <img src="./base_img/icons/стулья.png" alt="">
+                    <h5 class="inform__text"><a href="#!">Стулья для кухни</a></h5>
+                    
+                </div>
+                <div class="inform__Block">
+                    <img src="./base_img/icons/шкаф.png" alt="">
+                    <h5 class="inform__text"><a href="#!">Шкафы</a></h5>  
+                </div>
+                <div class="inform__Block">
+                    <img src="./base_img/icons/кровать.png" alt="">
+                    <h5 class="inform__text"><a href="#!">Двуспальные кровати</a></h5>
+                   
+                </div>
+                <div class="inform__Block">
+                    <img src="./base_img/icons/матрас.png" alt="">
+                    <h5 class="inform__text"><a href="#!">Матрасы</a></h5>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <h2 class="products__title title">Хиты продаж</h2>
+            <ul class="products-grid">
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/атмосфера1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Комод Атмосфера 70х72х38 см 1 ящик лдсп цвет белый Комод 2Я-03 Белый</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">2 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90198795</span>
+                            <span class="product__available">В наличии: 12 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">3 880 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/атмосфера1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Комод Атмосфера 70х72х38 см 1 ящик лдсп цвет белый Комод 2Я-03 Белый</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">2 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90198795</span>
+                            <span class="product__available">В наличии: 12 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">3 880 ₽</span>
+                            
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/атмосфера1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Комод Атмосфера 70х72х38 см 1 ящик лдсп цвет белый Комод 2Я-03 Белый</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">2 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90198795</span>
+                            <span class="product__available">В наличии: 12 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">3 880 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/атмосфера1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Комод Атмосфера 70х72х38 см 1 ящик лдсп цвет белый Комод 2Я-03 Белый</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">2 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90198795</span>
+                            <span class="product__available">В наличии: 12 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">3 880 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+            </ul>
+
+            
+        </div>
+    </section>
+
+    <section class="validation" id="validation">
+        <div class="container">
+            <div class="validation__form">
+                <h2 class="validation__title">Хотите первыми узнавать о лучших скидках и акциях?</h2>
+                <form action="#!" name="form" method="post" id="form">
+                    <div class="validation__input-box">
+                        <input type="text" class="validation__text" placeholder="Введите Ваш email" name="email" id="email"  
+                          data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" 
+                        />
+                        <input type="submit" class="validation__btn" id="button" value="Подписаться" />
+                    </div>
+                    
+                      
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage">
+        <div class="container">
+            <h2 class="title">Почему очень многие покупают у нас?</h2>
+            <div class="advantage__wrap">
+                <div class="advantage__block">
+                    <div class="advantage__title">Во-первых <br> мы-ПЕРВЫЕ!</div>
+                    <img class="advantage__icon" src="./base_img/icons/advantages_1.svg" alt="" width="208" height="150">
+                    <div class="advantage__text">Наша цель - быть первыми в предоставлении мебели и товаров для дома при рациональном отношении к бюджету</div>
+                </div>
+                <div class="advantage__block">
+                    <div class="advantage__title">Во-вторых, мы -<br> федеральная сеть</div>
+                    <img class="advantage__icon" src="./base_img/icons/advantages_2.svg" alt="" width="208" height="150">
+                    <div class="advantage__text">Мы - федеральная сеть, которая работает для удовлетворения потребностей наших покупателей в ассортименте мебели</div>
+                </div>
+                <div class="advantage__block">
+                    <div class="advantage__title">В-третьих, мы продаем по цене производителя</div>
+                    <img class="advantage__icon" src="./base_img/icons/advantages_3.svg" alt="" width="208" height="150">
+                    <div class="advantage__text">Мы продаем много. Это позволяет нам работать с низкой наценкой</div>
+                </div>
+                <div class="advantage__block">
+                    <div class="advantage__title">Наконец, мы отвечаем за качество</div>
+                    <img class="advantage__icon" src="./base_img/icons/advantages_4.svg" alt="" width="208" height="150">
+                    <div class="advantage__text">Мы отвечаем за качество и постоянно контролируем всех наших производителей</div>
+                </div>
+            
+
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <h2 class="products__title title">Вас может заинтересовать</h2>
+            <ul class="products-grid">
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/сокол1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/сокол2.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/сокол3.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Шкаф Сокол 34x183x37 см лдсп цвет венге 12 -классический узкий высокий шкаф-пенал  </a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,2
+                            </span>
+                            <span class="product__testimonials">7 отзывов</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90319828</span>
+                            <span class="product__available">В наличии: 5 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">6 069 ₽</span>
+                            
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/прочее/аскона1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/прочее/аскона2.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/прочее/аскона3.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Матрас Askona Smart Block 200x160 см, независимый пружинный блок</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">3 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90445845</span>
+                            <span class="product__available">В наличии: 12 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">10 152 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/турин1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/турин2.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/шкафы/турин 3.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Шкаф распашной Турин 2413 120.6x213x59.7 см ЛДСП цвет гикори джексон</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                4,3
+                            </span>
+                            <span class="product__testimonials">4 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 82841403</span>
+                            <span class="product__available">В наличии: 19 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">15 998 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/диван/прямой1.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/диван/прямой2.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/диван/прямой3.webp" alt="Комод атмофера"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="./base_img/диван/прямой4.webp" alt="Комод атмофера"></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Диван прямой Nrava Romi 157x87x89 см ламинат цвет серый выполнен в стиле минимализм</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                    />
+                                </svg>
+                                5
+                            </span>
+                            <span class="product__testimonials">2 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 90278417</span>
+                            <span class="product__available">В наличии: 3 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">23 990 ₽</span>
+                        </div>
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter="1">1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+            </ul>
+
+            
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__title title">Отзывы покупателей</div>
+                <div class="testimonials__slider">
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Осетров Андрей</div>
+                        </div>
+                        
+                        </div>
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Заказывал два детских компьютерных стула, привезли вовремя, собрали быстро! Молодцы.</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Грозились уехать, т.к. я опаздывал к доставке на 10 минут.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Лашкова Екатерина</div>
+                        </div>
+                        
+                        </div>
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Все очень понравилось, буду заказывать еще.</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">нет</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Наталья Степанова</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Спасибо! Понравилось все: пунктуальность,  общение сотрудников доставки и сборка мебели. Спасибо сотрудникам- Павлу и Сергею за профессионализм.</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">нет</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Tuylpanova Lena</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Скорость и точность обработки заказа.</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Не выявили.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Алексеева Елена</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Вежливый оператор,доставка в назначенное время,все понравилось из товара.</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Заказывали стулья цвет грецкий орех,привезли темный дуб,в принципе,по цвету,тоже ничего,а так все понравилось.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Роменская Эмилия</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Отличный стол. Собрала его сама, а мне 77! Приобрела, то, что хотела. Спасибо менеджеру Ане, она мне посоветовала купить этот стол. Успехов вам! Э.Н.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Жукова Елена</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Очень доброжелательный персонал, заказ доставили вовремя.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Артемова Таня</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">понравилось все</p>
+                            <div class="testimonials__paragraph-title"> ЧТО НЕ ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">недостатков нет</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__row">
+                            <img class="testimonials__avatar" src="./base_img/icons/ava_blank.png" alt="Покупатель" width="40" height="40">
+                            <div class="testimonials__rating">
+                                <div class="testimonials__rating-stars">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                    <img src="./base_img/icons/star.svg" alt="Рейтинг" width="16" height="15">
+                                </div>
+                                <div class="testimonials__name">Абдинов Махир</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonials__paragraph">
+                            <div class="testimonials__paragraph-title"> ЧТО ХОРОШО</div>
+                            <p class="testimonials__paragraph-text">Ваш отдел доставки ребята особенно Мененджер доставку Алексей подобран выше класс блогадарен за доставку вежливости с высокой культуры Алексей молодец.Блогадару и радости хочу сказат оставил хороший пичитления.Спасиба.Алексею.</p>
+                            <a href="#!" class="testimonials__read-btn">Прочитать отзыв</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__all">
+                    <a href="https://market.yandex.ru/" target="_blank" class="testimonials__all-btn">Отзывы на Яндекс Маркет</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <secction class="about-company">
+        <div class="container">
+            <h2 class="about-company__title">Сеть магазинов мебели Martin furniture</h2>
+            <div class="about-company__content">
+                <p>Первый Мебельный - это федеральная сеть мебельных магазинов в России и интернет-магазин мебели. Наши гипермаркеты можно встретить в Новосибирске, Томске, Кемерово, Барнауле и скоро в других регионах.</p>
+                <p>Мы напрямую работаем с проверенными мебельными фабриками и делаем недорогую мебель на собственном производстве,
+                    поэтому наши цены по-настоящему низкие. В нашем каталоге каждый сможет найти мебель по вкусу и купить
+                    ее по низкой цене. Онлайн магазин позволяет быстро совершить заказ и оформить доставку из любой точки России.</p>
+            </div>
+        </div>
+    </secction>
+    <div class="modal">
+		<div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+			<div class="modal-content order-modal__content">
+				<div class="order-modal__top">
+					<h2 class="order-modal__title">Оформление заказа</h2>
+					<span class="order-modal__number">Заказ № 3456 67</span>
+				</div>
+				<div class="order-modal__info">
+					<!--<div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span>3 шт</span></div>-->
+					<div class="order-modal__summ order-modal__info-item" >Общая сумма заказа: <span id="fullprice">5 789 ₽</span></div>
+					<div class="order-modal__products order-modal__info-item">
+						<button class="order-modal__btn">Состав заказа</button>
+						<ul class="order-modal__list">
+							<!-- <li class="order-modal__item">
+								<article class="order-modal__product order-product">
+									<img src="img/macbook.jpg" alt="" class="order-product__img">
+									<div class="order-product__text">
+										<h3 class="order-product__title">Диван</h3>
+										<span class="order-product__price">5 789 ₽ </span>
+									</div>
+									<button class="order-product__delete">Удалить</button>
+								</article>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="order-modal__form order" name="forma" id="forma">
+					<label class="order__label">
+						<span class="order__text">Ваше имя</span>
+						<input type="text" name="Имя" class="order__input" data-reg="^[А-ЯЁ][а-яё]*$">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Номер телефона</span>
+						<input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__" data-reg="^((\+7|7|8)+([0-9]){10})$">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Ваш email</span>
+						<input type="email" name="Email" class="order__input" placeholder="post@gmail.com" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+					</label>
+					<button class="order__btn btn" id="button">Оформить заказ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content-items">
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-item">
+                        <span class="footer_title">Часы работы</span>
+                        <span class="footer_text">10:00 - 21:00</span>
+                        </div>
+                        
+                        <div class="footer__contacts-item">
+                            <span class="footer_title">Телефон</span>
+                            <span class="footer_text">+7 (3822) 908-556</span>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <span class="footer_title">Martin furniture</span>
+                            <span class="footer_text">Все права защищены.</span>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+                <div class="footer__info">
+                    <img class="footer__info-img" src="./base_img/icons/location.png" width="20" height="27" alt="location">
+                    <a href="https://yandex.ru/maps/-/CCUniCrQpD" target="_blank">г. Томск, ул. Пушкина, 59/1</a>
+                </div>
+            </div>
+            
+        </div>
+       
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./base_js/base_validation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./base_js/swiper.js"></script>
+    <script src="./base_js/modal.js"></script>
+    <script src="./base_js/base_counter.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./base_js/base_script.js"></script>
+    <script src="./base_js/base_cart.js"></script>
+    <script src="./base_js/simplebar.js"></script>
+    <script src="./base_js/testimonilas.js"></script>
+
+    
+
+</body>
+</html>
